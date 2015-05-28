@@ -20,3 +20,13 @@ I haven't gotten this cran ready (yet) but there are a few ways you can get the 
 1.  Downloading the script directly from github
   1.  go to: https://github.com/chendaniely/libloadR/blob/master/R/parse_r_script.R and then right clock 'raw' and
     'save as' the file somewhere on yoru computer and then within R `source` the file and use the `libload` function
+
+## Personal Motivation
+I had a R script with 18 libraries to load while attending a workshop on GIS in R.
+I knew the majority of these packages were not installed on the server I was working on.
+I also did not want to end up typing all the package names into a vector to then be passed into `install.packages`,
+for some reason I felt R should just do all that for me...
+
+## Thanks
+
+Thanks [Aaron Schroeder](https://www.vbi.vt.edu/people/people-profile/Aaron-Schroeder) for the idea and name
