@@ -48,6 +48,8 @@
 #'
 #' @param file R script file to load
 #' @param ... library_pattern to be passed into .parse_r_script
+#'
+#' @export
 libload <- function(file, ...){
     libraries <- .parse_r_script(file, ...)
     pkgs <- sapply(X = libraries, FUN = .parse_load)
