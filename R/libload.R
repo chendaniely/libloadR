@@ -11,13 +11,13 @@
     lines <- readLines(file)
     # print(lines)
     library_lines <- grep(pattern = library_pattern, x = lines)
-    library_lines <- lines[library_lines]
-    return(library_lines)
+    load_commands <- lines[library_lines]
+    return(load_commands)
 }
 
 #' Parses the name of the library to be loaded
 #'
-#' This function takes in the load commands from .parse_r_script and only
+#' This function takes in the load commands from \code{.parse_r_script} and only
 #' returns the package name
 #'
 #' @param load_command line of the file that loads a package
