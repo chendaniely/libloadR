@@ -15,4 +15,7 @@ libload(file, ...)
 This function will take a R script, load any packages, and install packages
 as needed
 }
+\examples{
+# libload('r_script_file.R')
+}
 

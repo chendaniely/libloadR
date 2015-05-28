@@ -51,7 +51,8 @@
 #'
 #' @export
 #'
-#' @example # libload('r_script_file.R')
+#' @examples
+#' # libload('r_script_file.R')
 libload <- function(file, ...){
     libraries <- .parse_r_script(file, ...)
     pkgs <- sapply(X = libraries, FUN = .parse_load)
