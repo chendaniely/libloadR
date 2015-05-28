@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/11594/chendaniely/libloadR.svg)](http://dx.doi.org/10.5281/zenodo.18115)
+![release](https://img.shields.io/github/release/chendaniely/libloadR.svg)
+![downloads](https://img.shields.io/github/downloads/chendaniely/libloadR/latest/total.svg)
+
 # libloadR
 R package that handles loading and installing multiple libraries from an R script file
 
