@@ -22,7 +22,8 @@ I haven't gotten this cran ready (yet) but there are a few ways you can get the 
     'save as' the file somewhere on yoru computer and then within R `source` the file and use the `libload` function
 
 ## Personal Motivation
-I had a R script with 18 libraries to load while attending a workshop on GIS in R.
+I had a R script with 18 libraries to load while attending a workshop on GIS in R by
+[Emily Molfino](http://vbi.vt.edu/sdal/people/people-profile/Emily-Molfino).
 I knew the majority of these packages were not installed on the server I was working on.
 I also did not want to end up typing all the package names into a vector to then be passed into `install.packages`,
 for some reason I felt R should just do all that for me...
