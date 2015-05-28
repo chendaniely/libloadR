@@ -23,7 +23,7 @@ I haven't gotten this cran ready (yet) but there are a few ways you can get the 
 
 ## How to use
 
-`libload('path_to_r_script_file.R')`
+`libloadR::libload('path_to_r_script_file.R')`
 
 ## Personal Motivation
 I had a R script with 18 libraries to load while attending a workshop on GIS in R by
