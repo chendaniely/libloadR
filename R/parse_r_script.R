@@ -1,5 +1,6 @@
 #' Parses a file and returns the lines that load a library
-parse_r_script <- function(file, library_pattern = '^\\s*(library|require)\\(\\S*?\\)'){
+parse_r_script <- function(file,
+                           library_pattern = '^\\s*(library|require)\\(\\S*?\\)'){
     lines <- readLines(file)
     # print(lines)
     library_lines <- grep(pattern = library_pattern, x = lines)
@@ -10,7 +11,7 @@ parse_r_script <- function(file, library_pattern = '^\\s*(library|require)\\(\\S
 #' Parses the name of the library to be loaded
 parse_load <- function(load_command){
     open_paren <- regexpr(pattern = '\\(', text = load_command)[1]
-    close_paren <- regexpr(pattern = '\\)$', text = load_command)[1]
+    close_paren <- regexpr(pattern = '\\)', text = load_command)[1]
     substr(x = load_command, start = open_paren + 1, stop = close_paren - 1)
 }
 

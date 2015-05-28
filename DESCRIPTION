@@ -1,10 +1,11 @@
 Package: libloadR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Load and Install Pacakges If Necessary
 Version: 0.1
 Date: 2015-05-27
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Daniel Chen
+Maintainer: Daniel Chen <yourfault@somewhere.net>
+Description: Finds the lines of an R script that load a package.
+It will try to load that package or install it if the package is missing.
+License: MIT
 LazyData: TRUE
